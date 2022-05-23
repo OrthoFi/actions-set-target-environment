@@ -21,6 +21,12 @@ async function run(): Promise<void> {
         case 'regression':
           target = 'risk'
           break
+        case 'dev':
+        case 'develop':
+        case 'development':
+        case 'lithium':
+          target = 'lithium'
+          break
         default:
           target = branch
           break
